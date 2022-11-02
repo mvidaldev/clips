@@ -10,8 +10,7 @@ export class NavComponent implements OnInit {
   constructor(public modal: ModalService) {}
 
   ngOnInit(): void {}
-  openModal($event: Event) {
-    $event.preventDefault();
-    this.modal.toggleModal();
+  openModal() {
+    this.modal.toggleModal('auth');
   }
 }
